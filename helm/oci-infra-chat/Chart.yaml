@@ -1,0 +1,6 @@
+apiVersion: v2
+name: oci-infra-chat
+description: AI-powered OCI Infrastructure Chat with MCP server integration
+type: application
+version: 0.1.0
+appVersion: "latest"

@@ -1,0 +1,593 @@
+
+> panda@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.29
+  - Local:        http://localhost:3000
+  - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 5.2s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1624ms (188 modules)
+ ○ Compiling /_not-found ...
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (197kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+The user aborted a request.
+
+Retrying 1/3...
+ ✓ Compiled /_not-found in 17s (869 modules)
+ GET /explore 404 in 20002ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1399ms (861 modules)
+ GET / 307 in 2208ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 1117ms (856 modules)
+ GET /sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fdashboard 200 in 3418ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 846ms (859 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1203ms
+ GET /sign-in/SignIn_clerk_catchall_check_1776850339714 200 in 885ms
+Clerk: Clock skew detected. This usually means that your system clock is inaccurate. Clerk will attempt to account for the clock skew in development.
+
+To resolve this issue, make sure your system's clock is set to the correct time (e.g. turn off and on automatic time synchronization).
+
+---
+
+JWT issued at date claim (iat) is in the future. Issued at date: Wed, 22 Apr 2026 09:32:49 GMT; Current date: Wed, 22 Apr 2026 09:32:42 GMT; (reason=token-iat-in-the-future, token-carrier=cookie)
+Clerk: Clock skew detected. This usually means that your system clock is inaccurate. Clerk will attempt to account for the clock skew in development.
+
+To resolve this issue, make sure your system's clock is set to the correct time (e.g. turn off and on automatic time synchronization).
+
+---
+
+JWT issued at date claim (iat) is in the future. Issued at date: Wed, 22 Apr 2026 09:32:50 GMT; Current date: Wed, 22 Apr 2026 09:32:43 GMT; (reason=token-iat-in-the-future, token-carrier=cookie)
+Clerk: Clock skew detected. This usually means that your system clock is inaccurate. Clerk will attempt to account for the clock skew in development.
+
+To resolve this issue, make sure your system's clock is set to the correct time (e.g. turn off and on automatic time synchronization).
+
+---
+
+JWT issued at date claim (iat) is in the future. Issued at date: Wed, 22 Apr 2026 09:32:50 GMT; Current date: Wed, 22 Apr 2026 09:32:43 GMT; (reason=token-iat-in-the-future, token-carrier=cookie)
+Clerk: Clock skew detected. This usually means that your system clock is inaccurate. Clerk will attempt to account for the clock skew in development.
+
+To resolve this issue, make sure your system's clock is set to the correct time (e.g. turn off and on automatic time synchronization).
+
+---
+
+JWT issued at date claim (iat) is in the future. Issued at date: Wed, 22 Apr 2026 09:32:50 GMT; Current date: Wed, 22 Apr 2026 09:32:43 GMT; (reason=token-iat-in-the-future, token-carrier=cookie)
+Clerk: Refreshing the session token resulted in an infinite redirect loop. This usually means that your Clerk instance keys do not match - make sure to copy the correct publishable and secret keys from the Clerk dashboard.
+Clerk: Refreshing the session token resulted in an infinite redirect loop. This usually means that your Clerk instance keys do not match - make sure to copy the correct publishable and secret keys from the Clerk dashboard.
+ GET /sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fdashboard 200 in 471ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 69ms
+ GET /sign-in/SignIn_clerk_catchall_check_1776850365724 200 in 634ms
+ GET /sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fdashboard 200 in 445ms
+ GET /sign-in/SignIn_clerk_catchall_check_1776850385847 200 in 351ms
+ GET / 307 in 167ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 2.9s (1191 modules)
+prisma:query BEGIN
+ GET /dashboard 200 in 6271ms
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query COMMIT
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 131ms
+ ✓ Compiled in 1424ms (1200 modules)
+prisma:query SELECT 1
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query COMMIT
+ GET /dashboard?_rsc=1qmst 200 in 2170ms
+ ✓ Compiled in 1388ms (1200 modules)
+prisma:query SELECT 1
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query COMMIT
+ GET /dashboard?_rsc=1qmst 200 in 2385ms
+ ○ Compiling /onboarding ...
+ ✓ Compiled /onboarding in 1698ms (1210 modules)
+ ✓ Compiled in 1104ms (1224 modules)
+ ✓ Compiled in 3.1s (1224 modules)
+ ○ Compiling /api/onboarding/complete ...
+ ✓ Compiled /api/onboarding/complete in 749ms (784 modules)
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."name" = $1 LIMIT $2 OFFSET $3
+prisma:query COMMIT
+Onboarding error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+    at APIError.generate (webpack-internal:///(rsc)/./node_modules/openai/core/error.mjs:79:20)
+    at OpenAI.makeStatusError (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:238:71)
+    at OpenAI.makeRequest (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:407:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateEmbedding (webpack-internal:///(rsc)/./lib/matching.ts:26:17)
+    at async POST (webpack-internal:///(rsc)/./app/api/onboarding/complete/route.ts:42:27)
+    at async C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57228
+    at async eT.execute (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46851)
+    at async eT.handle (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:58760)
+    at async doRender (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:178:21)
+    at async handleRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:355:24)
+    at async requestHandlerImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:379:13)
+    at async Server.requestListener (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  status: 429,
+  headers: Headers {
+    date: 'Wed, 22 Apr 2026 09:39:51 GMT',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '337',
+    connection: 'keep-alive',
+    'set-cookie': '__cf_bm=7fRbaI1QTgfcsA1lYwzPwC5ytTx3gX5xdd_nGgQNcAY-1776850791.0291836-1.0.1.1-9xUOPsLQsqb4arfsqAmcx0KsT8BX9JYNLsasUMDIELU94EVW22BzgKdFB4KNn7rLAMCgKQ1WxtA7j7gFNbUpPJ9s38CV6YS58PoQrpd17reCH9AEa6PTTLKSygedE6RD; HttpOnly; Secure; Path=/; Domain=api.openai.com; Expires=Wed, 22 Apr 2026 10:09:51 GMT, _cfuvid=YEataGxSeay85in.sD5uy56A4Xxl8Yjdu76QjOQtH0w-1776850791.0291836-1.0.1.1-R0B.lCIr4IC4MGpoqGhz2mOSbTON3gxxhuftUEvBOp0; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com',
+    'cf-ray': '9f03a9e3eb492674-TLV',
+    'cf-cache-status': 'DYNAMIC',
+    server: 'cloudflare',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    vary: 'Origin',
+    'x-content-type-options': 'nosniff',
+    'x-openai-proxy-wasm': 'v0.1',
+    'x-request-id': 'req_458bcb2a75134477990db0e0a3ef85df',
+    'alt-svc': 'h3=":443"; ma=86400'
+  },
+  requestID: 'req_458bcb2a75134477990db0e0a3ef85df',
+  error: {
+    message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+    type: 'insufficient_quota',
+    param: null,
+    code: 'insufficient_quota'
+  },
+  code: 'insufficient_quota',
+  param: null,
+  type: 'insufficient_quota'
+}
+ POST /api/onboarding/complete 500 in 7948ms
+prisma:query SELECT 1
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."name" = $1 LIMIT $2 OFFSET $3
+prisma:query COMMIT
+Onboarding error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+    at APIError.generate (webpack-internal:///(rsc)/./node_modules/openai/core/error.mjs:79:20)
+    at OpenAI.makeStatusError (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:238:71)
+    at OpenAI.makeRequest (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:407:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateEmbedding (webpack-internal:///(rsc)/./lib/matching.ts:26:17)
+    at async POST (webpack-internal:///(rsc)/./app/api/onboarding/complete/route.ts:42:27)
+    at async C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57228
+    at async eT.execute (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46851)
+    at async eT.handle (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:58760)
+    at async doRender (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:178:21)
+    at async handleRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:355:24)
+    at async requestHandlerImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:379:13)
+    at async Server.requestListener (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  status: 429,
+  headers: Headers {
+    date: 'Wed, 22 Apr 2026 09:40:16 GMT',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '337',
+    connection: 'keep-alive',
+    'set-cookie': '__cf_bm=B6J.bF1BSnjDBJCUZw1QFZhf_kigQayR0bGVWckw2Zw-1776850816.5628693-1.0.1.1-HMmxz1wN5kuMLCPzVcSqHfOBQCukNEa3O6kFXV1h8TnxIxWn0dbRkYYjIQR.R.yCefNLhAPffF291E7RWqtWjpCqgmDZfc1aPTly.vrwX0QWl..aRh5AyHq.n5HKj.oj; HttpOnly; Secure; Path=/; Domain=api.openai.com; Expires=Wed, 22 Apr 2026 10:10:16 GMT, _cfuvid=r4VvwyoiiSazYSXmEvq2jL9_ID9x9Ll31rtvGIRewgU-1776850816.5628693-1.0.1.1-sEogAZifybLVpHB2luJpHfXoiv4jR8gxCbymLRp9hsk; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com',
+    'cf-ray': '9f03aa838c11e8f3-TLV',
+    'cf-cache-status': 'DYNAMIC',
+    server: 'cloudflare',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    vary: 'Origin',
+    'x-content-type-options': 'nosniff',
+    'x-openai-proxy-wasm': 'v0.1',
+    'x-request-id': 'req_063428303d6240fd9ffbb8c087bd5790',
+    'alt-svc': 'h3=":443"; ma=86400'
+  },
+  requestID: 'req_063428303d6240fd9ffbb8c087bd5790',
+  error: {
+    message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+    type: 'insufficient_quota',
+    param: null,
+    code: 'insufficient_quota'
+  },
+  code: 'insufficient_quota',
+  param: null,
+  type: 'insufficient_quota'
+}
+ POST /api/onboarding/complete 500 in 4286ms
+ ✓ Compiled in 1485ms (1224 modules)
+ ✓ Compiled in 1925ms (1224 modules)
+ ✓ Compiled in 1523ms (1224 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.1s (1213 modules)
+ GET /onboarding 200 in 605ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 148ms
+ ✓ Compiled in 1820ms (1227 modules)
+ GET /onboarding 200 in 347ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 76ms
+ ○ Compiling /api/onboarding/complete ...
+ ✓ Compiled /api/onboarding/complete in 1092ms (784 modules)
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."name" = $1 LIMIT $2 OFFSET $3
+prisma:query COMMIT
+Embedding generation skipped (OpenAI unavailable): RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+    at APIError.generate (webpack-internal:///(rsc)/./node_modules/openai/core/error.mjs:79:20)
+    at OpenAI.makeStatusError (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:238:71)
+    at OpenAI.makeRequest (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:407:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateEmbedding (webpack-internal:///(rsc)/./lib/matching.ts:26:17)
+    at async POST (webpack-internal:///(rsc)/./app/api/onboarding/complete/route.ts:44:25)
+    at async C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57228
+    at async eT.execute (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46851)
+    at async eT.handle (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:58760)
+    at async doRender (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:178:21)
+    at async handleRequest (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:355:24)
+    at async requestHandlerImpl (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\router-server.js:379:13)
+    at async Server.requestListener (C:\Users\h.monsonego\source\repos\Panda\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  status: 429,
+  headers: Headers {
+    date: 'Wed, 22 Apr 2026 09:46:29 GMT',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '337',
+    connection: 'keep-alive',
+    'set-cookie': '__cf_bm=KGWRMRHpQ_SHCpEYYAlAhZ_83wA35qQjMSXsij2xAJU-1776851189.264945-1.0.1.1-0GhoG4X6jqt8Nie4PO6Ul94059.9f0uWhCUSwexB48I2VhspSNIXJRB5YryUU4gHolsv9jRaHXRdlalLjeMBOow2c.OkX1AagbnXXiE7kdvZAcMltXGD9sJtfcgEMmWI; HttpOnly; Secure; Path=/; Domain=api.openai.com; Expires=Wed, 22 Apr 2026 10:16:29 GMT, _cfuvid=P7xq7qCYCqyWpEypmiwmdFQPWQDO7w6xQdeBQ5tl2IQ-1776851189.264945-1.0.1.1-Z._c2jrUpFC8J.or_zEub4E7Fq7IvL8cjwk5Tdgvhrw; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com',
+    'cf-ray': '9f03b39ced3c2212-TLV',
+    'cf-cache-status': 'DYNAMIC',
+    server: 'cloudflare',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    vary: 'Origin',
+    'x-content-type-options': 'nosniff',
+    'x-openai-proxy-wasm': 'v0.1',
+    'x-request-id': 'req_08a0c2e858104b0dba32432e8a8fde0b',
+    'alt-svc': 'h3=":443"; ma=86400'
+  },
+  requestID: 'req_08a0c2e858104b0dba32432e8a8fde0b',
+  error: {
+    message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+    type: 'insufficient_quota',
+    param: null,
+    code: 'insufficient_quota'
+  },
+  code: 'insufficient_quota',
+  param: null,
+  type: 'insufficient_quota'
+}
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query INSERT INTO "public"."User" ("id","clerkId","email","name","avatar","role","department","jobTitle","location","hobbies","interests","embedding","coins","level","companyId","createdAt","lastActive") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."Role"),$7,$8,$9,$10,$11,$12,$13,CAST($14::text AS "public"."Level"),$15,$16,$17) ON CONFLICT ("clerkId") DO UPDATE SET "name" = $18, "jobTitle" = $19, "department" = $20, "location" = $21, "hobbies" = $22, "interests" = $23, "embedding" = $24, "lastActive" = $25 WHERE ("public"."User"."clerkId" = $26 AND 1=1) RETURNING "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive"
+prisma:query COMMIT
+ POST /api/onboarding/complete 200 in 8903ms
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+ GET /dashboard?_rsc=gllbh 200 in 3118ms
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query COMMIT
+ ○ Compiling /matches ...
+ ✓ Compiled /matches in 1230ms (1220 modules)
+ ✓ Compiled in 1037ms (448 modules)
+ ✓ Compiled in 541ms (448 modules)
+ ✓ Compiled in 1432ms (1234 modules)
+ ✓ Compiled in 2s (1241 modules)
+ ✓ Compiled in 1009ms (1241 modules)
+ ✓ Compiled in 596ms (1241 modules)
+ ✓ Compiled in 807ms (1241 modules)
+prisma:query BEGIN
+ GET /dashboard 200 in 3338ms
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+ ○ Compiling /_not-found ...
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+ ✓ Compiled /_not-found in 2.2s (1244 modules)
+prisma:query COMMIT
+prisma:query BEGIN
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 2645ms
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query COMMIT
+ ✓ Compiled in 903ms (451 modules)
+prisma:query BEGIN
+ GET /dashboard?_rsc=1qmst 200 in 3231ms
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+ ✓ Compiled in 1811ms (1241 modules)
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+ GET /dashboard?_rsc=1qmst 200 in 4250ms
+prisma:query COMMIT
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query BEGIN
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query COMMIT
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query BEGIN
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+ ✓ Compiled in 1803ms (1236 modules)
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query BEGIN
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query SELECT 1
+prisma:query BEGIN
+ GET /dashboard?_rsc=1qmst 200 in 3295ms
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+ ✓ Compiled in 1103ms (1250 modules)
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query COMMIT
+prisma:query BEGIN
+ ✓ Compiled in 789ms (1250 modules)
+prisma:query DEALLOCATE ALL
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+prisma:query SELECT 1
+prisma:query BEGIN
+ GET /dashboard?_rsc=1qmst 200 in 3463ms
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+ GET /dashboard?_rsc=1qmst 200 in 3285ms
+prisma:query DEALLOCATE ALL
+ GET /dashboard 200 in 3257ms
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query COMMIT
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query BEGIN
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query BEGIN
+ ✓ Compiled in 1079ms (1250 modules)
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query BEGIN
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query DEALLOCATE ALL
+prisma:query BEGIN
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query COMMIT
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query BEGIN
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+ GET /dashboard?_rsc=1qmst 200 in 3248ms
+prisma:query BEGIN
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+ ✓ Compiled in 328ms (455 modules)
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query BEGIN
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query BEGIN
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query COMMIT
+prisma:query DEALLOCATE ALL
+prisma:query BEGIN
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query COMMIT
+prisma:query COMMIT
+prisma:query COMMIT
+prisma:query SELECT 1
+prisma:query BEGIN
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query DEALLOCATE ALL
+ GET /dashboard?_rsc=1qmst 200 in 3089ms
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query COMMIT
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query COMMIT
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query COMMIT
+prisma:query SELECT 1
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+ ✓ Compiled in 298ms (455 modules)
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query COMMIT
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+ GET /dashboard?_rsc=1qmst 200 in 3086ms
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query COMMIT
+ ○ Compiling /activities ...
+ ✓ Compiled /activities in 1810ms (1260 modules)
+prisma:query SELECT 1
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."clerkId", "public"."User"."email", "public"."User"."name", "public"."User"."avatar", "public"."User"."role"::text, "public"."User"."department", "public"."User"."jobTitle", "public"."User"."location", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text, "public"."User"."companyId", "public"."User"."createdAt", "public"."User"."lastActive" FROM "public"."User" WHERE ("public"."User"."clerkId" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query SELECT "public"."Company"."id", "public"."Company"."name", "public"."Company"."plan", "public"."Company"."createdAt" FROM "public"."Company" WHERE "public"."Company"."id" IN ($1) OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+ GET /dashboard?_rsc=1mcd0 200 in 3191ms
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."jobTitle", "public"."User"."department", "public"."User"."hobbies", "public"."User"."interests", "public"."User"."embedding", "public"."User"."coins", "public"."User"."level"::text FROM "public"."User" WHERE ("public"."User"."companyId" = $1 AND "public"."User"."id" <> $2) ORDER BY "public"."User"."id" ASC LIMIT $3 OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Activity"."id", "public"."Activity"."title", "public"."Activity"."type"::text, "public"."Activity"."description", "public"."Activity"."date", "public"."Activity"."location", "public"."Activity"."maxSlots", "public"."Activity"."coinsReward", "public"."Activity"."companyId", "public"."Activity"."creatorId", "public"."Activity"."createdAt" FROM "public"."Activity" WHERE ("public"."Activity"."companyId" = $1 AND "public"."Activity"."date" >= $2) ORDER BY "public"."Activity"."date" ASC LIMIT $3 OFFSET $4
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."activityId" IN ($1,$2,$3) OFFSET $4
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."Rsvp"."id", "public"."Rsvp"."userId", "public"."Rsvp"."activityId", "public"."Rsvp"."status"::text FROM "public"."Rsvp" WHERE "public"."Rsvp"."userId" = $1 OFFSET $2
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."User"."id", "public"."User"."name", "public"."User"."avatar", "public"."User"."coins" FROM "public"."User" WHERE "public"."User"."companyId" = $1 ORDER BY "public"."User"."coins" DESC LIMIT $2 OFFSET $3
+prisma:query COMMIT
+ ✓ Compiled in 2.7s (1260 modules)
+prisma:error Error in PostgreSQL connection: Error { kind: Io, cause: Some(Os { code: 10054, kind: ConnectionReset, message: "An existing connection was forcibly closed by the remote host." }) }
+prisma:error Error in PostgreSQL connection: Error { kind: Io, cause: Some(Os { code: 10054, kind: ConnectionReset, message: "An existing connection was forcibly closed by the remote host." }) }
+prisma:error Error in PostgreSQL connection: Error { kind: Io, cause: Some(Os { code: 10054, kind: ConnectionReset, message: "An existing connection was forcibly closed by the remote host." }) }
+prisma:error Error in PostgreSQL connection: Error { kind: Io, cause: Some(Os { code: 10054, kind: ConnectionReset, message: "An existing connection was forcibly closed by the remote host." }) }

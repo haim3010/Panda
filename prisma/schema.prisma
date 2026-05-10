@@ -1,0 +1,147 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Company {
+  id         String     @id @default(cuid())
+  name       String
+  plan       String     @default("freemium")
+  createdAt  DateTime   @default(now())
+  employees  User[]
+  activities Activity[]
+  reports    HrReport[]
+}
+
+model User {
+  id         String   @id @default(cuid())
+  clerkId    String   @unique
+  email      String   @unique
+  name       String
+  avatar     String?
+  role       Role     @default(EMPLOYEE)
+  department String?
+  jobTitle   String?
+  location   String?
+  hobbies    String[]
+  interests  String[]
+  embedding  Float[]
+  coins      Int      @default(0)
+  level      Level    @default(NEWBIE)
+  companyId  String
+  company    Company  @relation(fields: [companyId], references: [id])
+  createdAt  DateTime @default(now())
+  lastActive DateTime @default(now())
+
+  matchesA         Match[]   @relation("UserA")
+  matchesB         Match[]   @relation("UserB")
+  rsvps            Rsvp[]
+  sentMessages     Message[] @relation("Sender")
+  receivedMessages Message[] @relation("Receiver")
+  badgesEarned     Badge[]
+}
+
+enum Role {
+  EMPLOYEE
+  HR_ADMIN
+}
+
+enum Level {
+  NEWBIE
+  BEGINNER
+  GOLD
+  DIAMOND
+}
+
+model Match {
+  id        String      @id @default(cuid())
+  userAId   String
+  userBId   String
+  score     Float
+  status    MatchStatus @default(PENDING)
+  createdAt DateTime    @default(now())
+  userA     User        @relation("UserA", fields: [userAId], references: [id])
+  userB     User        @relation("UserB", fields: [userBId], references: [id])
+}
+
+enum MatchStatus {
+  PENDING
+  CONNECTED
+  DISMISSED
+}
+
+model Activity {
+  id          String       @id @default(cuid())
+  title       String
+  type        ActivityType
+  description String?
+  date        DateTime
+  location    String?
+  maxSlots    Int
+  coinsReward Int          @default(50)
+  companyId   String
+  creatorId   String
+  company     Company      @relation(fields: [companyId], references: [id])
+  rsvps       Rsvp[]
+  createdAt   DateTime     @default(now())
+}
+
+enum ActivityType {
+  SPORT
+  SOCIAL
+  WORKSHOP
+  TOURNAMENT
+}
+
+model Rsvp {
+  id         String     @id @default(cuid())
+  userId     String
+  activityId String
+  status     RsvpStatus @default(GOING)
+  user       User       @relation(fields: [userId], references: [id])
+  activity   Activity   @relation(fields: [activityId], references: [id])
+
+  @@unique([userId, activityId])
+}
+
+enum RsvpStatus {
+  GOING
+  MAYBE
+  NOT_GOING
+}
+
+model Message {
+  id         String   @id @default(cuid())
+  senderId   String
+  receiverId String
+  content    String
+  read       Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  sender     User     @relation("Sender", fields: [senderId], references: [id])
+  receiver   User     @relation("Receiver", fields: [receiverId], references: [id])
+}
+
+model Badge {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String
+  awardedAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model HrReport {
+  id            String   @id @default(cuid())
+  companyId     String
+  period        String
+  activeUsers   Int
+  eventsCreated Int
+  matchesMade   Int
+  engagementPct Float
+  company       Company  @relation(fields: [companyId], references: [id])
+  createdAt     DateTime @default(now())
+}

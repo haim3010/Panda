@@ -1,0 +1,53 @@
+namespace: oci-infra-chat
+
+image:
+  repository: ghcr.io/org/oci-infra-chat
+  tag: latest
+  pullPolicy: IfNotPresent
+
+ingress:
+  host: chat.example.com
+  tls:
+    enabled: false
+    secretName: oci-infra-chat-tls
+
+hpa:
+  minReplicas: 2
+  maxReplicas: 10
+
+mcpServers:
+  compute:
+    enabled: true
+    package: mcp-oci-compute
+  storage:
+    enabled: true
+    package: mcp-oci-storage
+  network:
+    enabled: false
+    package: mcp-oci-network
+  database:
+    enabled: false
+    package: mcp-oci-database
+  identity:
+    enabled: true
+    package: mcp-oci-identity
+
+resources:
+  app:
+    requests:
+      cpu: 250m
+      memory: 256Mi
+    limits:
+      cpu: 1000m
+      memory: 512Mi
+  mcp:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 500m
+      memory: 256Mi
+
+secrets:
+  anthropicApiKey: ""
+  authToken: ""
