@@ -16,7 +16,10 @@ const isHrRoute = createRouteMatcher(['/hr(.*)'])
 
 export default clerkMiddleware(async (auth, req) => {
   if (isEmployeeRoute(req) || isHrRoute(req)) {
-    await auth.protect()
+    const authObj = await auth()
+    if (!authObj.userId) {
+      return authObj.redirectToSignIn()
+    }
   }
 })
 
